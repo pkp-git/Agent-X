@@ -18,7 +18,7 @@ app.add_middleware(
 )
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-genai.configure(api_key="AIzaSyC71yxkuJ49ujaHkwKxB_HBG6_AK3MJuic")
+genai.configure(api_key="") #Enter API key here
 model = genai.GenerativeModel("models/gemini-2.0-flash")
 
 @app.post("/api/agent")
