@@ -1,10 +1,14 @@
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 import os
-
+from dotenv import load_dotenv
 import google.generativeai as genai
 from fastapi.middleware.cors import CORSMiddleware
 
+load_dotenv()
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+genai.configure(api_key=GEMINI_API_KEY)
+model = genai.GenerativeModel("models/gemini-2.0-flash")
 
 app = FastAPI()
 
@@ -16,10 +20,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"]
 )
-
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-genai.configure(api_key="") #Enter API key here
-model = genai.GenerativeModel("models/gemini-2.0-flash")
 
 @app.post("/api/agent")
 async def agent(request: Request):
