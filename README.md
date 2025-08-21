@@ -22,10 +22,10 @@ cd Agent-X
 ```
 
 ### 2⃣ Set Up Environment Variables
-- Create a `.env` file in the root directory (or use the provided example).
+- Create a `.env` file in the root directory.
 - Add your Google Gemini API key:
   ```env
-  GEMINI_API_KEY=your_gemini_api_key_here
+  GEMINI_API_KEY="your_gemini_api_key_here"
   ```
 
 ### 3⃣ Install Python Dependencies
