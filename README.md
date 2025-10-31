@@ -6,7 +6,7 @@ Welcome to **Agent-X**, an AI-powered web application for managing courses with 
 
 ## Features
 
-✅ **AI Agent Integration** – Use Google Gemini to interpret user requests and perform UI actions or chat!
+✅ **AI Agent Integration** – Use Google Gemini to interpret user requests and perform UI actions or the chat!
 ✅ **Modern Web UI** – Built with Next.js and Tailwind CSS for a beautiful, responsive experience.
 ✅ **Course Management** – Create, view, and manage courses easily.
 ✅ **Full-Stack** – FastAPI backend, React/Next.js frontend, and seamless API communication.
